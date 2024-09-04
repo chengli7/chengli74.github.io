@@ -1,0 +1,1 @@
+import{_ as t,o,c as a,a as e,d as c}from"./app-536d921a.js";const n={},s=e("h2",{id:"快速开始",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#快速开始","aria-hidden":"true"},"#"),c(" 快速开始")],-1),r=e("p",null,"1、项目路径不能有中文名，否则npm run build打包时会报错",-1),_=[s,r];function d(l,i){return o(),a("div",null,_)}const u=t(n,[["render",d],["__file","blogQA.html.vue"]]);export{u as default};

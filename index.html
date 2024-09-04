@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="card-layout">
+            <div v-for="(item,i) in message" :key="i" class='card_1'>
+                <div class='card-child'>
+                    <div class='card-child-button'>
+                        <button class="card-button">按钮</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type=text/javascript>
+          new Vue({
+            el: '#app',
+            data: {
+                message: [1,2,3,4,5]
+            },
+            methods:{
+                show:function(){alert("run...")}
+            }
+        })
+    </script>
+</body>
+
+<style type=text/css>
+    .card-layout {
+        width: 1400px;
+        height: 800px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-child {
+        overflow: hidden;
+        min-width: 300px;
+        height: 300px;
+        background-color: rgb(157, 176, 211);
+    }
+
+    .card_1 {
+        margin: 10px;
+        min-width: 300px;
+        height: 300px;
+        background-color: rgb(237, 100, 136);
+    }
+
+    .card-child:hover {
+        height: 350px;
+        transition: height 0.5s;
+    }
+
+    .card-child-button {
+        position: relative;
+        height: 350px;
+        width: 300px;
+    }
+
+    .card-button {
+        width: 100px;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+</style>
+
+</html>

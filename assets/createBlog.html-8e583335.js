@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-7e8e43c2","path":"/blogs/2023/createBlog.html","title":"如何搭建个人博客","lang":"en-US","frontmatter":{"title":"如何搭建个人博客","date":"2023/12/15","tags":["blog"],"categories":["博客"]},"headers":[{"level":2,"title":"快速开始","slug":"快速开始","link":"#快速开始","children":[]}],"git":{},"filePathRelative":"blogs/2023/createBlog.md"}');export{e as data};
